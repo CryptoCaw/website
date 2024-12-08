@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Red+Rose:wght@300..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000000;
+  height: 100svh;
+  font-family: Lexend;
+  font-size: 16px;
+}
+.container > * {
+  padding: 20px;
+}
+div.title {
+  margin-left: 40px;
+}
+p.title {
+  color: #dce8ff;
+  font-weight: 400;
+  font-size: clamp(50px, 80px, 200px);
+  letter-spacing: -6px;
+}
+.idonknow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.second p {
+  color: #d7d7d7;
+  max-width: 630px;
+  font-family: Roboto, sans-serif;
+}
+.idonknow img {
+  max-width: 98vw;
+}
+footer {
+  background: linear-gradient(180deg, #34405f 0%, #0b1425 100%);
+  padding: 60px 20px;
+}
+.footer-title {
+  color: #ffffff;
+  font-size: 60px;
+  max-width: 430px;
+}
+.engage {
+  color: #aef5ff;
+  text-decoration: underline;
+  background-image: url("../assets/images/letstalk.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  font-family: Red Rose, Lexend;
+}
+.engage .how,
+.how > * {
+  margin: 10px 0;
+}
+.socials {
+  display: flex;
+  gap: 16px;
+}
+.socials > a {
+  display: grid;
+  place-content: center;
+  background-color: #aef5ff;
+  color: black;
+  border-radius: 100%;
+  width: 40px;
+  aspect-ratio: 1/1;
+}
+.socials a {
+  text-decoration: none;
+}
+.socials svg{
+    width: 20px;
+}
+@media (max-width: 767px) {
+  div.title {
+    margin-left: 10px;
+  }
+}
